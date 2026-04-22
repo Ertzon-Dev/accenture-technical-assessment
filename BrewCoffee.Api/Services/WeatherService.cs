@@ -47,7 +47,7 @@ public class WeatherService : IWeatherService
         catch (Exception ex)
         {
             _logger.LogError(ex, "Failed to get weather data");
-            return null; // Fallback to default message if weather service fails
+            return null;
         }
     }
 }
